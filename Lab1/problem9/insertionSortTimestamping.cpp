@@ -1,4 +1,4 @@
-// Write a Cpp program to implement Selection Sort and analyze time required on
+// Write a Cpp program to implement Insertion Sort and analyze time required on
 // a. integer array of size 20 in ascending order.
 // b. integer array of size 1000 in ascending order.
 // c. integer array of size 10000 in ascending order.

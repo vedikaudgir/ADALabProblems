@@ -16,7 +16,7 @@ using namespace chrono;
 class SelectionSort
 {
 private:
-    int inputArray[1000000];
+    int inputArray[100000];
     int key;
 
 public:
@@ -78,9 +78,6 @@ int main()
     auto start20 = high_resolution_clock::now();
     obj.selection(20);
     auto end20 = high_resolution_clock::now();
-    cout << endl
-         << "Sorted Array is: ";
-
     auto duration20 = duration_cast<nanoseconds>(end20 - start20);
 
     cout << endl
@@ -91,9 +88,6 @@ int main()
     auto start1000 = high_resolution_clock::now();
     obj2.selection(1000);
     auto end1000 = high_resolution_clock::now();
-    cout << endl
-         << "Sorted Array is: ";
-
     auto duration1000 = duration_cast<nanoseconds>(end1000 - start1000);
     cout << endl
          << "Time taken: " << duration1000.count() << " nanoseconds\n";
@@ -103,9 +97,6 @@ int main()
     auto start10000 = high_resolution_clock::now();
     obj3.selection(10000);
     auto end10000 = high_resolution_clock::now();
-    cout << endl
-         << "Sorted Array is: ";
-
     auto duration10000 = duration_cast<nanoseconds>(end10000 - start10000);
     cout << endl
          << "Time taken: " << duration10000.count() << " nanoseconds\n";
