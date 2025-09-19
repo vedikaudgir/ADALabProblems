@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int inputArray[15];
+char inputArray[15];
 
 void setRandomElementsInArray(int index)
 {
@@ -19,7 +19,7 @@ void printArray()
 {
     for (int i = 0; i < 15; i++)
     {
-        printf("%4d", inputArray[i]);
+        printf("%4c", inputArray[i]);
     }
     printf("\n");
 }
