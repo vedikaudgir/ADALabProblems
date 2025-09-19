@@ -2,6 +2,7 @@
 // Author - Vedika Udgir
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 int inputArray[15];
