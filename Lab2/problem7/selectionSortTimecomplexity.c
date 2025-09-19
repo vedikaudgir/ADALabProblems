@@ -1,5 +1,4 @@
-// C Program to implement Selection Sort on character array of size 20
-// and analyze time required in ascending order
+// C Program to implement Selection Sort on character array of size 20 and analyze time required in ascending order
 // Author - Vedika Udgir
 
 #include <stdio.h>
