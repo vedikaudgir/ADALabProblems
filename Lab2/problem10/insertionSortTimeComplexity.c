@@ -1,5 +1,4 @@
-// C Program to implement Insertion Sort on character array of size 20
-// in ascending order
+// C Program to implement Insertion Sort on character array of size 20 in ascending order
 // Author - Vedika Udgir
 
 #include <stdio.h>
