@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int inputArray[25];
+int inputArray[25] = {98, 23, 45, 14, 6, 67, 33, 42};
 
 void printArray()
 {
@@ -16,13 +16,13 @@ void printArray()
     printf("\n");
 }
 
-void setRandomElementsInArray(int index)
-{
-    for (int i = 0; i < index; i++)
-    {
-        inputArray[i] = rand() % 100;
-    }
-}
+// void setRandomElementsInArray(int index)
+// {
+//     for (int i = 0; i < index; i++)
+//     {
+//         inputArray[i] = rand() % 100;
+//     }
+// }
 
 void swap(int *n1, int *n2)
 {
@@ -71,12 +71,12 @@ int main()
     clock_t start, end;
     double cpu_time_used;
 
-    setRandomElementsInArray(25);
+    // setRandomElementsInArray(25);
     printf("\nOriginal Array:\n");
     printArray();
 
     start = clock();
-    quickSort(inputArray, 0, 25);
+    quickSort(inputArray, 0, 7);
     end = clock();
 
     printf("\nSorted Array (Ascending):\n");
