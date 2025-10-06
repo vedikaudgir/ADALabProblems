@@ -168,7 +168,7 @@ int main()
     printf("\nTime taken by merge sort = %f seconds\n", cpu_time_used_for_merge_sort);
 
     startQuickSort = clock();
-    mergeSort(inputArray, 0, 25);
+    quickSort(inputArray, 0, 25);
     endQuickSort = clock();
 
     cpu_time_used_for_quick_sort = ((double)(endQuickSort - startQuickSort)) / CLOCKS_PER_SEC;
