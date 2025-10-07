@@ -57,7 +57,7 @@ int partition(char a[], int start, int end)
     }
 }
 
-int partition_r(char a[], int start, int end)
+int setRandomPivot(char a[], int start, int end)
 {
     srand(time(0));
     int random = start + rand() % (end - start);
@@ -73,7 +73,7 @@ void quickSort(char a[], int start, int end)
 {
     if (start < end)
     {
-        int pi = partition_r(a, start, end);
+        int pi = setRandomPivot(a, start, end);
 
         quickSort(a, start, pi);
         quickSort(a, pi + 1, end);
